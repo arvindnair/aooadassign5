@@ -1,0 +1,74 @@
+// $Id: assignment5.mpc 378 2010-02-07 22:09:38Z hillj $
+
+
+project (assignment5) {
+   specific (make) {
+    requires += cpp11
+    compile_flags += -std=c++11
+  }
+ exename = assignment5
+ 
+install = .
+ 
+ 
+ Source_Files {
+    
+driver.cpp
+Postfix_Evaluator_Strategy.cpp
+Postfix_Flyweight_Evaluator_Strategy.cpp
+Postfix_Flyweight_Evaluator_Performance_Strategy.cpp
+Tree_Evaluator_Performance_Strategy.cpp
+Tree_Evaluator_Strategy.cpp
+Expr_Evaluator_Strategy.cpp
+Add_Command.cpp
+Subtract_Command.cpp
+Divide_Command.cpp
+Multiply_Command.cpp
+Modulus_Command.cpp
+Num_Command.cpp
+Left_Parenthesis_Command.cpp
+Right_Parenthesis_Command.cpp
+Expr_Command.cpp
+Expr_Command_Factory.cpp
+Binary_Command.cpp
+Stack_Expr_Command_Factory.cpp
+Flyweight_Expr_Command_Factory.cpp
+Expr_Node.cpp
+
+Binary_Node.cpp
+
+Add_Node.cpp
+
+Subtract_Node.cpp
+
+Multiply_Node.cpp
+
+Divide_Node.cpp
+
+Modulus_Node.cpp
+
+Number_Node.cpp
+
+Expr_Node_Visitor.cpp
+
+Eval_Expr_Tree.cpp
+
+Expr_Builder.cpp
+
+Expr_Tree_Builder.cpp
+
+Expr_Node_Factory.cpp
+
+Tree_Expr_Node_Factory.cpp
+
+
+}
+
+  
+Template_Files {
+ Array_Iterator.cpp
+   Stack.cpp
+   Array.cpp
+}
+
+}

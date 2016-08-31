@@ -1,0 +1,21 @@
+// $Id: random.mpc 378 2015-04-23 22:09:38Z arvnair $
+
+
+project (random) {
+   specific (make) {
+    requires += cpp11
+    compile_flags += -std=c++11
+  }
+ exename = random
+ 
+install = .
+ 
+ 
+ Source_Files {
+
+Random_Generator.cpp
+Random_Driver.cpp
+
+}
+
+}
